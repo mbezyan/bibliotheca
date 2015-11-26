@@ -1,0 +1,9 @@
+bibliotheca\model\Book.class
+bibliotheca\controller\MemberController.class
+bibliotheca\controller\AssetController.class
+bibliotheca\controller\LoanController.class
+bibliotheca\model\Loan.class
+bibliotheca\model\Asset.class
+bibliotheca\model\Member.class
+bibliotheca\dao\LibraryDao.class
+bibliotheca\model\Person.class
