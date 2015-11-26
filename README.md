@@ -10,8 +10,10 @@ If the above command produces the following error message:
 s, org.codehaus.mojo] available from the repositories [local (C:\Users\JavaHonk\.m2\repository), central (https://repo.
 maven.apache.org/maven2)] -> [Help 1]
 
-Then Maven settings.xml needs to be modified to include org.mortbay.jetty:
+Then Maven settings.xml needs to be modified to include org.mortbay.jetty.
+
 Modify the following section in [Maven-installation-folder]/conf/settings.xml:
+
 <pluginGroups>
     <!-- pluginGroup
      | Specifies a further group identifier to use for plugin lookup.
@@ -21,4 +23,5 @@ Modify the following section in [Maven-installation-folder]/conf/settings.xml:
 </pluginGroups>
 
 Once the application is running Jetty, access it through your browser on:
+
 localhost:8080/bibliotheca
