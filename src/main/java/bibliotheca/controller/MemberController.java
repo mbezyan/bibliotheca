@@ -30,7 +30,6 @@ public class MemberController {
 	
 	@RequestMapping(value="/members")
 	public ModelAndView returnBean(HttpServletRequest request) {
-		System.out.println("member requested");
         return new ModelAndView("members.jsp", "libraryDao", libraryDao);
     }
 	

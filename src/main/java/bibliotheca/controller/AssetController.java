@@ -23,7 +23,7 @@ public class AssetController {
     private LibraryDao libraryDao;
 	
 	@RequestMapping(value="/books")
-	public ModelAndView hello(HttpServletRequest request) {
+	public ModelAndView returnBean(HttpServletRequest request) {
         return new ModelAndView("books.jsp", "libraryDao", libraryDao);
     }
 
