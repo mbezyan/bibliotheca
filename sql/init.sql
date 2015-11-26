@@ -63,13 +63,19 @@ INSERT INTO Member (Member_Id, Person_Id, Join_Date) VALUES (2, 2, parsedatetime
 
 INSERT INTO PUBLIC.Asset (Asset_Id, Barcode, Asset_Type) VALUES (1, '123456789', 'Book');
 INSERT INTO PUBLIC.Book (Asset_Id, Title, Author_Name, ISBN) VALUES (1, 'Animal Farm', 'George Orwell', '9780451526342');
-INSERT INTO PUBLIC.Asset (Asset_Id, Barcode, Asset_Type) VALUES (2, '123456789', 'Book');
+INSERT INTO PUBLIC.Asset (Asset_Id, Barcode, Asset_Type) VALUES (2, '456987212', 'Book');
 INSERT INTO PUBLIC.Book (Asset_Id, Title, Author_Name, ISBN) VALUES (2, 'Nineteen Eighty-Four', 'George Orwell', '9780547249643');
+INSERT INTO PUBLIC.Asset (Asset_Id, Barcode, Asset_Type) VALUES (3, '514784596', 'Book');
+INSERT INTO PUBLIC.Book (Asset_Id, Title, Author_Name, ISBN) VALUES (3, 'Lord of the Flies', 'William Golding', '0571056865');
+INSERT INTO PUBLIC.Asset (Asset_Id, Barcode, Asset_Type) VALUES (4, '325845651', 'Book');
+INSERT INTO PUBLIC.Book (Asset_Id, Title, Author_Name, ISBN) VALUES (4, 'Catch-22', 'Joseph Heller', '0684833395');
 
 INSERT INTO PUBLIC.Loan (Loan_Id, Asset_Id, Member_Id, Checked_Out_On, Due_Date) 
 	VALUES (1, 1, 1, parsedatetime('20-11-2015', 'dd-MM-yyyy'), parsedatetime('19-5-2016', 'dd-MM-yyyy'));
 INSERT INTO PUBLIC.Loan (Loan_Id, Asset_Id, Member_Id, Checked_Out_On, Due_Date) 
 	VALUES (2, 2, 2, parsedatetime('20-10-2015', 'dd-MM-yyyy'), parsedatetime('01-01-2016', 'dd-MM-yyyy'));
+INSERT INTO PUBLIC.Loan (Loan_Id, Asset_Id, Member_Id, Checked_Out_On, Due_Date) 
+	VALUES (3, 3, 1, parsedatetime('01-06-2015', 'dd-MM-yyyy'), parsedatetime('01-12-2015', 'dd-MM-yyyy'));
 
 COMMIT;
 	
